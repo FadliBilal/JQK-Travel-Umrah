@@ -71,11 +71,9 @@
         @layer components {
             /* Navigation Links */
             .nav-link {
-                /* REVISI: Warna teks diubah untuk background gelap */
                 @apply text-gray-200 hover:text-emas transition-colors duration-200;
             }
             .mobile-nav-link {
-                /* REVISI: Warna teks diubah untuk background gelap */
                 @apply block py-2 text-gray-200 hover:text-emas transition-colors duration-200;
             }
             .dropdown-link {
@@ -156,11 +154,9 @@
     </style>
 </head>
 
-<!-- REVISI: Body diubah ke background hitam dan teks abu-abu -->
 <body class="font-body text-gray-200 bg-hitam-jqk" x-data="{ mobileMenuOpen: false }">
 
 <!-- ===== Header & Navigation ===== -->
-<!-- REVISI: Header diubah ke background hitam -->
 <header class="sticky top-0 z-50 bg-hitam-jqk/90 backdrop-blur-md shadow-sm border-b border-gray-800">
 
     <nav class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
@@ -170,7 +166,7 @@
             <a href="#home" aria-label="Beranda PT. Jabal Qubais Kurnia">
                 <!-- REVISI: Logo diubah ke placeholder putih -->
                 <img class="h-14 w-auto" 
-                     src="logo-kuning.ico" 
+                     src="assets/images/logo-kuning.ico" 
                      onerror="this.src='https://placehold.co/200x60/FFFFFF/101010?text=JQK+Travel'; this.onerror=null;"
                      alt="Logo PT. Jabal Qubais Kurnia">
             </a>
@@ -246,7 +242,7 @@
 <section id="home"
     role="region" aria-label="Selamat Datang"
     class="relative min-h-[720px] flex items-start pt-20 justify-center text-center text-white bg-cover bg-center"
-    style="background-image: url('hero.jpg');">
+    style="background-image: url('assets/images/hero.jpg');">
     <div class="absolute inset-0 bg-black/70"></div>
 
     <div class="relative z-10 p-4 max-w-4xl" data-aos="fade-up">
@@ -289,7 +285,7 @@
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
 
             <div id="layanan-umrah" class="service-card" data-aos="fade-up" data-aos-delay="100">
-                <img src="https://placehold.co/400x250/D4AF37/FFFFFF?text=Umrah" alt="Paket Umrah" class="w-full h-40 object-cover">
+                <img src="assets/images/umroh.jpg" alt="Paket Umrah" class="w-full h-40 object-cover">
                 <div class="p-6">
                     <h3 class="service-card-title">Paket Umrah</h3>
                     <p class="service-card-text">
@@ -299,7 +295,7 @@
             </div>
 
             <div id="layanan-domestik" class="service-card" data-aos="fade-up" data-aos-delay="200">
-                <img src="https://placehold.co/400x250/10b981/FFFFFF?text=Wisata+Domestik" alt="Wisata Domestik" class="w-full h-40 object-cover">
+                <img src="assets/images/domestik.jpg" alt="Wisata Domestik" class="w-full h-40 object-cover">
                 <div class="p-6">
                     <h3 class="service-card-title">Wisata Domestik</h3>
                     <p class="service-card-text">
@@ -309,7 +305,7 @@
             </div>
 
             <div id="layanan-religi" class="service-card" data-aos="fade-up" data-aos-delay="300">
-                <img src="https://placehold.co/400x250/3b82f6/FFFFFF?text=Wisata+Religi" alt="Wisata Religi" class="w-full h-40 object-cover">
+                <img src="assets/images/religi.png" alt="Wisata Religi" class="w-full h-40 object-cover">
                 <div class="p-6">
                     <h3 class="service-card-title">Wisata Religi</h3>
                     <p class="service-card-text">
@@ -319,7 +315,7 @@
             </div>
 
             <div id="layanan-luar-negeri" class="service-card" data-aos="fade-up" data-aos-delay="400">
-                <img src="https://placehold.co/400x250/8b5cf6/FFFFFF?text=Luar+Negeri" alt="Wisata Luar Negeri" class="w-full h-40 object-cover">
+                <img src="assets/images/luar negeri.jpg" alt="Wisata Luar Negeri" class="w-full h-40 object-cover">
                 <div class="p-6">
                     <h3 class="service-card-title">Wisata Luar Negeri</h3>
                     <p class="service-card-text">
@@ -428,7 +424,7 @@
         <div class="grid md:grid-cols-3 gap-8">
 
             <div class="paket-card" data-aos="fade-up" data-aos-delay="100">
-                <img src="https://placehold.co/400x250/D4AF37/FFFFFF?text=Umrah+Regular" alt="Umrah Regular 9 Hari" class="w-full h-48 object-cover">
+                <img src="assets/images/umroh.jpg" alt="Umrah Regular 9 Hari" class="w-full h-48 object-cover">
                 <div class="p-8 grow">
                     <h3 class="paket-card-title">Umrah Regular (9 Hari)</h3>
                     <div class="paket-card-harga">Rp 28-30 Juta</div>
@@ -439,16 +435,16 @@
                 </div>
                 <div class="paket-card-cta">
                     <div class="flex justify-between items-center">
-                        <a href="#jadwal" class="cta-primary-sm text-center">Lihat Jadwal</a>
-                        <span class="text-sm font-semibold text-yellow-800 bg-yellow-100 px-3 py-1 rounded-full">Sisa 10 Kursi</span>
+                        <a href="#jadwal" class="cta-primary-sm text-center">Lihat Detail Paket</a>
+                        <span class="text-sm font-semibold text-yellow-800 bg-yellow-100 px-3 py-1 rounded-full">Tersedia</span>
                     </div>
                 </div>
             </div>
 
             <div class="paket-card" data-aos="fade-up" data-aos-delay="200">
-                <img src="https://placehold.co/400x250/D4AF37/FFFFFF?text=Umrah+Premium" alt="Umrah 12-16 Hari" class="w-full h-48 object-cover">
+                <img src="assets/images/umroh.jpg" alt="Umrah 12-16 Hari" class="w-full h-48 object-cover">
                 <div class="p-8 grow">
-                    <h3 class="paket-card-title">Umrah (12–16 Hari)</h3>
+                    <h3 class="paket-card-title">Umrah Plus (12–16 Hari)</h3>
                     <div class="paket-card-harga">Rp 31-33 Juta</div>
                     <ul class="paket-card-features">
                         <li>Hotel: Bintang 4-5 Dekat Haram</li>
@@ -457,14 +453,14 @@
                 </div>
                 <div class="paket-card-cta">
                     <div class="flex justify-between items-center">
-                        <a href="#jadwal" class="cta-primary-sm text-center">Lihat Jadwal</a>
-                        <span class="text-sm font-semibold text-yellow-800 bg-yellow-100 px-3 py-1 rounded-full">Sisa 5 Kursi</span>
+                        <a href="#jadwal" class="cta-primary-sm text-center">Lihat Detail Paket</a>
+                        <span class="text-sm font-semibold text-yellow-800 bg-yellow-100 px-3 py-1 rounded-full">Tersedia</span>
                     </div>
                 </div>
             </div>
 
             <div class="paket-card" data-aos="fade-up" data-aos-delay="300">
-                <img src="https://placehold.co/400x250/D4AF37/FFFFFF?text=Umrah+Musiman" alt="Umrah Musiman" class="w-full h-48 object-cover">
+                <img src="assets/images/umroh.jpg" alt="Umrah Musiman" class="w-full h-48 object-cover">
                 <div class="p-8 grow">
                     <h3 class="paket-card-title">Umrah Musiman</h3>
                     <div class="paket-card-harga">Harga Sesuai Periode</div>
@@ -474,8 +470,10 @@
                     </ul>
                 </div>
                 <div class="paket-card-cta">
-                    <a href="https://wa.me/6281246056323?text=Halo%20Jabal%20Qubais%20Kurnia,%20saya%20ingin%20bertanya%20tentang%20paket%20umrah%20musiman"
-                        target="_blank" class="cta-primary-sm w-full text-center">Tanya Paket</a>
+                    <div class="flex justify-between items-center">
+                        <a href="#jadwal" class="cta-primary-sm text-center">Lihat Detail Paket</a>
+                        <span class="text-sm font-semibold text-yellow-800 bg-yellow-100 px-3 py-1 rounded-full">Tersedia</span>
+                    </div>
                 </div>
             </div>
 
@@ -516,7 +514,7 @@
             <div class="jadwal-card">
                 <!-- Top Part -->
                 <div class="flex flex-col md:flex-row justify-between md:items-center mb-4">
-                    <h3 class="font-heading text-2xl font-bold text-hitam-jqk">07 Januari 2026 Umroh Plus Doha</h3>
+                    <h3 class="font-heading text-2xl font-bold text-hitam-jqk">07 Januari 2026 Umroh Reguler</h3>
                     <div class="flex flex-wrap gap-2 mt-3 md:mt-0">
                         <span class="jadwal-tag bg-gray-200 text-gray-800">9 Hari</span>
                         <span class="jadwal-tag bg-blue-100 text-blue-800">Transit</span>
@@ -567,7 +565,7 @@
             <div class="jadwal-card">
                 <!-- Top Part -->
                 <div class="flex flex-col md:flex-row justify-between md:items-center mb-4">
-                    <h3 class="font-heading text-2xl font-bold text-hitam-jqk">04 Februari 2026 Umroh Plus Doha</h3>
+                    <h3 class="font-heading text-2xl font-bold text-hitam-jqk">04 Februari 2026 Umroh Plus</h3>
                     <div class="flex flex-wrap gap-2 mt-3 md:mt-0">
                         <span class="jadwal-tag bg-gray-200 text-gray-800">9 Hari</span>
                         <span class="jadwal-tag bg-blue-100 text-blue-800">Transit</span>
@@ -618,7 +616,7 @@
             <div class="jadwal-card">
                 <!-- Top Part -->
                 <div class="flex flex-col md:flex-row justify-between md:items-center mb-4">
-                    <h3 class="font-heading text-2xl font-bold text-hitam-jqk">01 April 2026 Umroh Plus Doha</h3>
+                    <h3 class="font-heading text-2xl font-bold text-hitam-jqk">01 April 2026 Umroh Musiman</h3>
                     <div class="flex flex-wrap gap-2 mt-3 md:mt-0">
                         <span class="jadwal-tag bg-gray-200 text-gray-800">9 Hari</span>
                         <span class="jadwal-tag bg-blue-100 text-blue-800">Transit</span>
@@ -675,7 +673,7 @@
         <div class="grid md:grid-cols-2 overflow-hidden rounded-2xl shadow-2xl border border-gray-800">
             <!-- Left Side: Image -->
             <div class="min-h-[400px] bg-cover bg-center" 
-                 style="background-image: url('https://placehold.co/800x600/101010/FFFFFF?text=Background+Mekkah');">
+                 style="background-image: url('assets/images/cta.jpg');">
             </div>
             <!-- Right Side: Content (bg-white) -->
             <div class="flex flex-col justify-center p-12 bg-white text-hitam-jqk">
@@ -909,7 +907,7 @@
             <div class="md:col-span-2">
                 <a href="#home" aria-label="Beranda PT. Jabal Qubais Kurnia">
                     <img class="h-20 w-auto mb-4" 
-                         src="logo-kuning.png" 
+                         src="assets/images/logo-kuning.png" 
                          alt="Logo Putih PT. Jabal Qubais Kurnia">
                 </a>
                 <p class="max-w-md">
