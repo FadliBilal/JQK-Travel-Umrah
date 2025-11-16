@@ -1,0 +1,88 @@
+/* 1. Tambahkan arahan dasar Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 2. Tambahkan style kustom Anda */
+[x-cloak] { 
+    display: none !important; 
+}
+
+@layer components {
+    /* Navigation Links */
+    .nav-link {
+        @apply text-gray-200 hover:text-emas transition-colors duration-200;
+    }
+    .mobile-nav-link {
+        @apply block py-2 text-gray-200 hover:text-emas transition-colors duration-200;
+    }
+    .dropdown-link {
+        @apply block w-full px-5 py-3 text-left text-hitam-jqk/80 hover:bg-gray-100 hover:text-emas transition-colors duration-200;
+    }
+
+    /* Call to Action (CTA) Buttons */
+    .cta-primary-sm {
+        @apply bg-emas hover:bg-emas-dark text-white font-heading font-semibold px-5 py-2 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 text-sm;
+    }
+    .cta-primary-lg {
+        @apply bg-emas hover:bg-emas-dark text-white font-heading font-semibold text-lg px-8 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5;
+    }
+    .cta-secondary-lg {
+        @apply bg-white hover:bg-gray-100 text-hitam-jqk font-heading font-semibold text-lg px-8 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5;
+    }
+
+    /* Badges and Titles */
+    .badge-emas {
+        @apply inline-block bg-emas/20 text-emas font-heading font-semibold px-4 py-1 rounded-full text-sm mb-4;
+    }
+    .section-title {
+        @apply font-heading text-3xl md:text-4xl font-bold text-white mb-4;
+    }
+    .section-subtitle {
+        @apply text-lg text-gray-300 max-w-2xl mx-auto;
+    }
+
+    /* Service Cards (White on Black) */
+    .service-card {
+        @apply bg-white border border-gray-100 rounded-2xl shadow-lg overflow-hidden hover:shadow-xl hover:border-emas/50 transition-all duration-300 h-full;
+    }
+    .service-card-title {
+        @apply font-heading text-xl font-bold text-emas mb-3;
+    }
+    .service-card-text {
+        @apply text-hitam-jqk/80;
+    }
+
+    /* Paket (Package) Cards (White on Black) */
+    .paket-card {
+        @apply bg-white border-2 border-gray-100 rounded-2xl shadow-lg overflow-hidden flex flex-col transition-all duration-300 hover:shadow-2xl hover:border-emas;
+    }
+    .paket-card-title {
+        @apply font-heading text-2xl font-bold text-hitam-jqk mb-2;
+    }
+    .paket-card-harga {
+        @apply font-heading text-3xl font-bold text-emas mb-4;
+    }
+    .paket-card-features {
+        @apply list-disc list-inside space-y-2 text-hitam-jqk/80 mb-6;
+    }
+    .paket-card-cta {
+        @apply p-6 bg-gray-50 border-t border-gray-100;
+    }
+
+    /* Jadwal Cards (White on Black) */
+    .jadwal-card {
+        @apply bg-white rounded-2xl shadow-lg border border-gray-100 p-6 transition-all duration-300 hover:shadow-xl;
+    }
+    .jadwal-tag {
+        @apply inline-block text-xs font-semibold px-3 py-1 rounded-full;
+    }
+    .cta-orange-sm {
+        @apply bg-orange-500 hover:bg-orange-600 text-white font-heading font-semibold text-sm px-5 py-2 rounded-lg shadow-md hover:shadow-lg transition-all duration-300;
+    }
+
+    /* Footer Links */
+    .footer-link {
+        @apply text-gray-300 hover:text-white transition-colors duration-200;
+    }
+}
